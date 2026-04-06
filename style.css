@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    margin: 40px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #16213e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #0f3460;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+header h1 { margin: 0; color: #4ecca3; font-size: 1.5rem; }
+
+nav { display: flex; gap: 10px; }
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover, nav a.active { background-color: #0f3460; color: #4ecca3; }
+
+main h2 { color: #4ecca3; text-align: center; margin-bottom: 20px; }
+
+.add-section, .list-section { margin-bottom: 30px; }
+.add-section h3, .list-section h3 { color: #888; border-bottom: 1px solid #333; padding-bottom: 5px; }
+
+form { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #0f3460;
+    color: white;
+    min-width: 150px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #4ecca3;
+    border: none;
+    border-radius: 5px;
+    color: #1a1a2e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover { background-color: #45b291; transform: scale(1.05); }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #0f3460;
+    border-radius: 8px;
+    overflow: hidden;
+}
+th { background-color: #0f3460; color: #4ecca3; padding: 15px; text-align: left; }
+td { padding: 12px; border-bottom: 1px solid #1a1a2e; }
+tr:hover td { background-color: #16213e; }
+
+.btn-delete {
+    color: #e94560;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #e94560;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.btn-delete:hover { background: #e94560; color: white; }
+
+footer { text-align: center; color: #666; font-size: 0.8rem; border-top: 2px solid #0f3460; padding-top: 15px; margin-top: 20px; }
